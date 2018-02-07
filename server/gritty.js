@@ -130,7 +130,7 @@ function onConnection(options, socket) {
     function onTerminal(params) {
         params = params || {};
         
-        const env = params.env;
+        const env = Object.assign({}, socket.request.env, params.env);
         const rows = params.rows;
         const cols = params.cols;
         
