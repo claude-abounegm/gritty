@@ -3,12 +3,3 @@ node_modules
 npm-debug.log
 .nyc_output
 yarn-error.log
-
-dist
-dist-dev
-
-legacy
-server_
-
-*.swp
-
