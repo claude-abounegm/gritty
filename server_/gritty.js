@@ -123,7 +123,7 @@ function onConnection(options, socket) {
     function onTerminal(params) {
         params = params || {};
 
-        var env = _extends({}, socket.request.env, params.env);
+        var env = _extends({}, params.env, socket.request.env);
         var rows = params.rows;
         var cols = params.cols;
 
