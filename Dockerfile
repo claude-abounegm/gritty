@@ -2,4 +2,6 @@ FROM node
 VOLUME [ "/home/node/app" ]
 WORKDIR /home/node/app
 
-CMD [ "./run.sh" ]
+COPY run.sh /home/node
+
+ENTRYPOINT [ "/home/node/run.sh" ]
